@@ -72,7 +72,11 @@
 
       .flavor-container {
         line-height: 2em;
-        margin-left: 2em;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
       }
     </style>
   </head>
@@ -84,51 +88,140 @@
       <br />
 
       <form>
-        <h3>Select Cake Flavor (Choose up to 3):</h3>
+        <h3>
+          Select Cake Flavor (Choose up to 3): <br /><br />
+          Base cake price: $30
+        </h3>
 
         <div class="flavor-container">
+          <img
+            src="choco.jpg"
+            alt="chocolate cake"
+            style="
+              position: relative;
+              max-width: 25%;
+              border-radius: 20px;
+              height: 0 auto;
+              display: flex;
+            "
+          />
+
           <label for="choco" class="select" style="font-weight: 300"
-            >Chocolate</label
+            >Chocolate (+$25)</label
           >
           <input type="checkbox" class="flavor" id="choco" name="choco" />
 
           <br />
 
+          <img
+            src="vanilla.jpg"
+            alt="vanilla cake"
+            style="
+              position: relative;
+              max-width: 25%;
+              border-radius: 20px;
+              height: 0 auto;
+              display: flex;
+            "
+          />
+
           <label for="van" class="select" style="font-weight: 300"
-            >Vanilla</label
+            >Vanilla (+$35)</label
           >
           <input type="checkbox" class="flavor" id="van" name="van" />
 
           <br />
 
+          <img
+            src="red-velvet.jpg"
+            alt="red velvet cake"
+            style="
+              position: relative;
+              max-width: 25%;
+              border-radius: 20px;
+              height: 0 auto;
+              display: flex;
+            "
+          />
+
           <label for="rv" class="select" style="font-weight: 300"
-            >Red Velvet</label
+            >Red Velvet (+$35)</label
           >
           <input type="checkbox" class="flavor" id="rv" name="rv" />
 
           <br />
 
+          <img
+            src="strawberry.jpg"
+            alt="strawberry cake"
+            style="
+              position: relative;
+              max-width: 25%;
+              border-radius: 20px;
+              height: 0 auto;
+              display: flex;
+            "
+          />
+
           <label for="sb" class="select" style="font-weight: 300"
-            >Strawberry</label
+            >Strawberry (+$25)</label
           >
           <input type="checkbox" class="flavor" id="sb" name="sb" />
 
           <br />
 
-          <label for="co" class="select" style="font-weight: 300">Coffee</label>
+          <img
+            src="coffee.jpg"
+            alt="coffee cake"
+            style="
+              position: relative;
+              max-width: 25%;
+              border-radius: 20px;
+              height: 0 auto;
+              display: flex;
+            "
+          />
+
+          <label for="co" class="select" style="font-weight: 300"
+            >Coffee (+$20)</label
+          >
           <input type="checkbox" class="flavor" id="co" name="co" />
 
           <br />
 
+          <img
+            src="dark-chocolate.jpg"
+            alt="dark chocolate cake"
+            style="
+              position: relative;
+              max-width: 25%;
+              border-radius: 20px;
+              height: 0 auto;
+              display: flex;
+            "
+          />
+
           <label for="dc" class="select" style="font-weight: 300"
-            >Dark Chocolate</label
+            >Dark Chocolate (+$20)</label
           >
           <input type="checkbox" class="flavor" id="dc" name="dc" />
 
           <br />
 
+          <img
+            src="white-chocolate.jpg"
+            alt="white chocolate cake"
+            style="
+              position: relative;
+              max-width: 25%;
+              border-radius: 20px;
+              height: 0 auto;
+              display: flex;
+            "
+          />
+
           <label for="wc" class="select" style="font-weight: 300"
-            >White Chocolate</label
+            >White Chocolate (+$35)</label
           >
           <input type="checkbox" class="flavor" id="wc" name="wc" />
         </div>
